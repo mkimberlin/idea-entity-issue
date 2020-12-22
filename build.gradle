@@ -1,0 +1,21 @@
+plugins {
+    id "java"
+    id "net.ltgt.apt-idea" version "0.21"
+    id "idea"
+}
+
+targetCompatibility = "11"
+sourceCompatibility = "11"
+archivesBaseName = "idea-entity-issue"
+
+version "0.1"
+group "com.objectcomputing.idea.entityissue"
+
+repositories {
+    mavenCentral()
+    maven { url "https://jcenter.bintray.com" }
+}
+
+dependencies {
+    implementation "jakarta.persistence:jakarta.persistence-api:2.2.2"
+}
